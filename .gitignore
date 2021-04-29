@@ -1,0 +1,36 @@
+.DS_Store
+node_modules
+/dist
+
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Infrastructure & CDK asset staging directory
+infrastructure/*.js
+infrastructure/lib/resources/**/!*.js
+infrastructure/!jest.config.js
+infrastructure/*.d.ts
+infrastructure/**/*.d.ts
+infrastructure/node_modules
+infrastructure/.cdk.staging
+infrastructure/cdk.out
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
